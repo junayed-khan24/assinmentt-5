@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment Five</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-100" >
+
+    <section class="container mx-auto " > 
+      <br>
+      <!-- navber section -->
+
+          <nav class="flex justify-between items-center bg-white p-5 rounded-xl">
+          <div class="flex items-center gap-3">
+            <img class="size-7" src="assets/logo.png" alt="">
+            <h3 class="text-xl">Dev<span class="font-bold">Board</span></h3>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <div class="flex gap-1 bg-blue-100 rounded-full px-3 py-2">
+             <div class="">
+              <img class="size-6" src="assets/checkbox.png" alt="">
+             </div>
+              <h2 id="count1" class="font-bold text-lg">23</h2>
+            </div>
+            <img id="colorToggle" class="size-10 bg-blue-100 rounded-full p-2" src="assets/theme-btn.png" alt="">
+          </div>
+        </nav>
+      <br>
+
+
+        <!-- main section  -->
+        <section class="flex gap-3">
+
+          <!-- discover something part  -->
+          <div class="w-10/12 bg-white rounded-lg">
+              
+            <!-- three box part -->
+             <div class="flex justify-around items-center gap-4  my-6 mx-4 border-b  border-dashed border-gray-300 pb-4">
+
+              <!-- box 1 -->
+              <div class="flex justify-center items-center bg-blue-100 rounded-lg gap-3 w-3/12 h-28">
+                <div class="bg-white rounded-full p-3">
+                  <img src="assets/checkbox.png" alt="">
+                  </div>
+               <div>
+                <h2 class="text-lg font-bold">Task Assiged</h2>
+                <h2 id="count2" class="text-xl font-bold">6</h2>
+               </div>
+              </div>
+
+              <!-- box 2  -->
+              <div id="box-2" class="flex justify-center items-center bg-blue-100 gap-3 rounded-lg w-6/12 h-28 bg-gradient-to-r from-blue-600 to-blue-400">
+                <img src="assets/board.png" alt="">
+                <h2 class="text-xl font-semibold text-white">Discover Something New Today!
+                </h2>
+              </div>
+
+              <!-- box 3  -->
+              <div class="flex justify-center items-center bg-blue-100 rounded-lg gap-3 w-3/12 h-28">
+                <div class="bg-white rounded-full p-3">
+                <img src="assets/calender.png" alt="">
+                </div>
+                <h2 class="text-xl font-semibold ">Fri Feb 28 2025</h2>
+              </div>  
+                
+              </div>
+              
+
+
+    <!-- six box part -->
+     <div class=" grid grid-cols-3  gap-4 my-8 mx-4">
+
+      <!-- box 1  -->
+      <div class="bg-blue-100 rounded-lg p-5">
+        <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-28">Shop Ease</h2>
+        <h1 class="text-2xl font-bold my-3">Fix Mobile Button Issue
+        </h1>      
+        <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+        <div class="flex justify-between items-center mb-0">
+         <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+         21 Marce 2025
+         </h2>
+         <button onclick="handleButtonClick(1)" class="btn btn-active btn-primary font-bold text-xl">Complated</button>
+        </div>
+      </div>
+
+      <!-- box 2  -->
+      <div class="bg-blue-100 rounded-lg p-5">
+        <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-24">Soft Pay</h2>
+        <h1 class="text-2xl font-bold my-3">Add Pay Success Modal
+        </h1>      
+        <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+        <div class="flex justify-between items-center mb-0">
+         <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+         21 Marce 2025
+         </h2>
+         <button onclick="handleButtonClick(2)" class="btn btn-active btn-primary font-bold text-xl">Complated</button>
+        </div>
+      </div>
+
+      <!-- box 3  -->
+      <div class="bg-blue-100 rounded-lg p-5">
+        <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-20">Meta</h2>
+        <h1 class="text-2xl font-bold my-3">Add new raction 🤲
+        </h1>      
+        <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+        <div class="flex justify-between items-center mb-0">
+         <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+         21 Marce 2025
+         </h2>
+         <button onclick="handleButtonClick(3)" class="btn btn-active btn-primary font-bold text-xl">Conplated</button>
+        </div>
+      </div>
+
+      <!-- box 4  -->
+      <div class="bg-blue-100 rounded-lg p-5">
+        <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-52">Programming Hero</h2>
+        <h1 class="text-2xl font-bold my-3">Fix Video Loading Issue
+        </h1>      
+        <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+        <div class="flex justify-between items-center mb-0">
+         <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+         21 Marce 2025
+         </h2>
+         <button onclick="handleButtonClick(4)" class="btn btn-active btn-primary font-bold text-xl">Conplated</button>
+        </div>
+      </div>
+
+      <!-- box 5  -->  <div class="bg-blue-100 rounded-lg p-5">
+        <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-32">Google LLC</h2>
+        <h1 class="text-2xl font-bold my-3">Intergrate AI search 
+        </h1>      
+        <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+        <div class="flex justify-between items-center mb-0">
+         <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+         21 Marce 2025
+         </h2>
+         <button onclick="handleButtonClick(5)" class="btn btn-active btn-primary font-bold text-xl">Conplated</button>
+        </div>
+      </div>
+
+      <!-- box 6  -->
+        <div class="bg-blue-100 rounded-lg p-5">
+          <h2 class="text-xl bg-white rounded-xl text-gray-600 text-center h-auto w-40">Polygon Tech</h2>
+          <h1 class="text-2xl font-bold my-3">Review Ami Probashi Site
+          </h1>      
+          <p class="bg-white text-left rounded-lg mb-3 p-3 font-semibold text-gray-600">A card component has a figure, a body part, and inside body there arae title and actions parts</p>        
+          <div class="flex justify-between items-center mb-0">
+           <h2 class="text-xl font-semibold text-gray-600">Deadline <br>
+           21 Marce 2025
+           </h2>
+           <button onclick="handleButtonClick(6)" class="btn btn-active btn-primary font-bold text-xl">Conplated</button>
+          </div>
+        </div>
+       
+
+     </div>
+
+             </div>
+
+          
+
+          <!-- activity log part -->
+           <div class="bg-white w-3/12 items-center rounded-lg">
+            <br>
+            <div class="flex justify-center items-center gap-2">
+              <img class="text-center" src="assets/activity.png" alt="">
+            <h2 class="text-center text-2xl">Activity Log</h2>
+            </div>
+           <div class="flex justify-center items-center mt-4 border-b  border-dashed border-gray-300 pb-4">
+            <button onclick="clearCompleted()" class=" btn btn-active btn-primary font-bold text-lg ">Clear History</button>
+           </div>
+
+            <div id="completedIssues" class="p-2">
+                <!-- Completed issues will be displayed here -->
+            </div>
+         
+
+           </div>
+
+
+
+               <script>
+        function handleButtonClick(issueNumber) {
+            const confirmation = confirm("Bourd updated Successfully ?");
+            if (confirmation) {
+                // Update counts 
+                const count1 = document.getElementById("count1");
+                const count2 = document.getElementById("count2");
+                count1.innerText = parseInt(count1.innerText) + 1;
+                count2.innerText = parseInt(count2.innerText) - 1;
+
+                // Get current time
+                const currentTime = new Date().toLocaleTimeString();
+
+                // Show completed issue
+                const completedIssues = document.getElementById("completedIssues");
+                const issueText = [
+                    `You have completed the task fix mobile button issue at ${currentTime}`,
+                    `You have completed the task Add Pay Success Modal at ${currentTime}`,
+                    `You have completed the task Add new raction 🤲 at ${currentTime}`,
+                     `You have completed the task Fix Video Loading Issue at ${currentTime}`,
+                    `You have completed the task Intergrate AI search at ${currentTime}`,
+                    `You have completed the task Review Ami Probashi Site at ${currentTime}`
+                ];
+                const backgroundColors = [
+                    "bg-blue-100 mb-2 rounded", // Background for issue 1-6
+                    "bg-blue-100 mb-2 rounded", // Background for issue 2
+                    "bg-blue-100 mb-2 rounded", // Background for issue 3
+                    "bg-blue-100 mb-2 rounded", // Background for issue 4
+                    "bg-blue-100 mb-2 rounded", // Background for issue 5
+                    "bg-blue-100 mb-2 rounded" // Background for issue 6
+                ];
+                const newIssue = document.createElement("h3");
+                newIssue.className = `font-semibold p-3 ${backgroundColors[issueNumber - 1]}`;
+                newIssue.innerText = issueText[issueNumber - 1];
+                completedIssues.appendChild(newIssue);
+
+                // Disable the button
+                const button = event.target;
+                button.disabled = true;
+            }
+        }
+
+        function clearCompleted() {
+            const completedIssues = document.getElementById("completedIssues");
+            completedIssues.innerHTML = ""; // Clear all completed issues
+        }
+    </script>
+
+      <script src="first.js"></script>
+      <script src="toggle.js"></script>
+      <script src="color.js"></script>
+    
+</body>
+</html>
